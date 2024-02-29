@@ -1,0 +1,20 @@
+
+public class ForEachExample {
+
+	public static void main(String[] args) {
+		int array[]= {5,6,7,8,9};
+		System.out.println("Array Elements are");
+		//for each loop
+		for(int item:array) {
+			System.out.println(item);
+		}
+		//another example for for-each loop
+		String studentDetails[][]= {{"23BCAM01","Adarsh"},{"23BCAM02","Amar"}};
+		for(String key[]:studentDetails) {
+			for(String val:key) {
+				System.out.print(val+"\t");
+			}
+			System.out.println();
+		}
+	}
+}
