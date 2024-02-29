@@ -1,0 +1,30 @@
+package com.seamedu;
+
+import java.util.Scanner;
+
+public class PrimeSeries {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the limit");
+		int limit=sc.nextInt();
+		System.out.println("Prime Series from 1 to "+limit);
+		for(int i=1;i<limit;i++) {
+			boolean flag=true;
+			if(i==1) {
+				continue;
+			}
+			for(int j=2;j<=i/2;j++) {
+				if(i%j==0) {
+					flag=false;
+					break;
+				}
+			}
+			if(flag) {
+				System.out.println(i);
+			}
+		}
+
+	}
+
+}
