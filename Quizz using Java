@@ -1,3 +1,8 @@
+/* Create a quiz using Java
+ * @author: Jaya John
+ */
+
+
 import java.util.Scanner;
 
 class Questionaire{
