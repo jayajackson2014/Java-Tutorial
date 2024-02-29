@@ -1,4 +1,6 @@
-
+/*  foreach loop use case in Java
+ * @author: Jaya John
+ */
 public class ForEachExample {
 
 	public static void main(String[] args) {
