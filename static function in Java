@@ -1,4 +1,6 @@
-
+/* static function in Java
+ * @author: Jaya John
+ */
 public class Greet {
 
 	static void message() {
