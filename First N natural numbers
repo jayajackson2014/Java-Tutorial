@@ -1,0 +1,24 @@
+/*
+ * Print first N natural numbers using while loop
+ * @author: Jaya John
+ /*
+
+package com.seamedu;
+
+import java.util.Scanner;
+
+public class NnaturalNumbers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the limit");
+		int limit=sc.nextInt();
+		int i=1;
+		System.out.println("First "+limit+" Natural Numbers are: ");
+		while(i<=limit) {
+			System.out.println(i);
+			i++;
+		}
+	}
+}
