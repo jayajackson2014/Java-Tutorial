@@ -1,8 +1,12 @@
+
+/*
+ * Array creation and displaying the array elements
+ */
 package com.seamedu;
 
 import java.util.Scanner;
 
-public class LargestElementOfAnArray {
+public class ArrayExample {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
