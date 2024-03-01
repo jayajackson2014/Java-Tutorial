@@ -1,0 +1,35 @@
+/*
+ * Program to explore functions in Java
+ * This program is to find the area and volume of the Rectangle
+ * @author:Jaya John
+ */
+
+package com.seamedu;
+
+class Box{
+	int length,breadth,height;
+	void setData(int l,int b,int h) {
+		length=l;
+		breadth=b;
+		height=h;
+	}
+	void findArea() {
+		System.out.println("Area of a Reactangle: "+(length*breadth));
+	}
+	void findVolume() {
+		System.out.println("Volume of a Reactangle: "+(length*breadth*height));
+	}
+	
+}
+
+public class Reactangle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Box myBox=new Box();
+		myBox.setData(10, 20, 30);
+		myBox.findArea();
+		myBox.findVolume();
+	}
+
+}
