@@ -1,0 +1,37 @@
+/*
+ * Program to explore how to read different types of inputs from the user
+ * @author: Jaya John
+ */
+
+import java.util.Scanner;
+
+public class InputReading {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int rollNo;
+		String name;
+		float mark;
+		char grade;
+		double salary;
+		System.out.println("Enter the rollNo");
+		rollNo=sc.nextInt();// To read integer value from the user
+		System.out.println("Enter your name");
+		name=sc.next();// To read string value
+		System.out.println("Enter your marks");
+		mark=sc.nextFloat();// To read float value
+		System.out.println("Enter your grade");
+		grade=sc.next().charAt(0);// To read char value
+		System.out.println("Enter your expected salary");
+		salary=sc.nextDouble();	// To read double value	
+		
+		System.out.println("Your RollNo: "+rollNo);
+		System.out.println("Your Name: "+name);
+		System.out.println("Your mark: "+mark);
+		System.out.println("Your Grade: "+grade);
+		System.out.println("Your Expected Salary: "+salary);
+
+	}
+
+}
