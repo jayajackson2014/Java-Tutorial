@@ -6,49 +6,4 @@
 import java.util.Scanner;
 
 class Questionaire{
-	void readDetails() {
-		System.out.println("Enter your names");
-		Scanner sc=new Scanner(System.in);
-		String name = sc.next();
-		System.out.println("\nHi "+name);
-		System.out.println("\nStart Quizz");
-		System.out.println("\nGood Luck!");
-	}
-	
-	void question() {
-		int marks=0;
-		String qp[][]= {{"Short form of Java","a for Java","b for Javascript"},
-				{"How do you insert comment in Java","a for //statement","b for /* statement","c for /# statement"}
-		};
-		String ans[]= {"a","a"};
-		int i=0;
-		for(String key[]:qp) {
-			System.out.println("\nQuizz "+(i+1)+"/2\n");
-			for(String val:key) {
-				System.out.println(val);			
-			}
-			Scanner sc=new Scanner(System.in);
-			String a=sc.next();
-			String b=ans[i];
-			if(a.equals(b)) {
-				System.out.println("Correct answer\n");
-				marks+=1;
-			}
-			i++;
-		}	
-		
-		System.out.println("Your Score"+marks+"/2");
-	}
-	
-}
-
-public class QuizzGame {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Questionaire q=new Questionaire();
-		q.readDetails();
-		q.question();
-	}
-
 }
