@@ -1,0 +1,61 @@
+/*
+ * Matrix Addition
+ */
+
+package com.seamedu;
+
+import java.util.Scanner;
+
+public class Matrix {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int r1,c1,r2,c2,matrixA[][],matrixB[][],resultantMatrix[][];
+		System.out.println("Enter the size of the matrixA");
+		r1=sc.nextInt();
+		c1=sc.nextInt();
+		matrixA=new int[r1][c1];// Dynamic matrix creation
+		System.out.println("Enter the elements");
+		for(int i=0;i<r1;i++) {
+			for(int j=0;j<c1;j++) {
+				matrixA[i][j]=sc.nextInt();
+			}
+		}
+		System.out.println("Enter the size of the matrixB");
+		r2=sc.nextInt();
+		c2=sc.nextInt();
+		matrixB=new int[r2][c2];// Dynamic matrix creation
+		System.out.println("Enter the elements");
+		for(int i=0;i<r2;i++) {
+			for(int j=0;j<c2;j++) {
+				matrixB[i][j]=sc.nextInt();
+			}
+		}
+		System.out.println("Elements of the matrixA:");
+		for(int i=0;i<r1;i++) {
+			for(int j=0;j<c1;j++) {
+				System.out.print(matrixA[i][j]+" ");
+			}
+			System.out.println();
+		}
+		System.out.println("Elements of the matrixB:");
+		for(int i=0;i<r2;i++) {
+			for(int j=0;j<c2;j++) {
+				System.out.print(matrixB[i][j]+" ");
+			}
+			System.out.println();
+		}
+		resultantMatrix=new int[r1][c1];
+		System.out.println("Resultant Matrix:");
+		for(int i=0;i<r1;i++) {
+			for(int j=0;j<c1;j++) {
+				resultantMatrix[i][j]=matrixA[i][j]+matrixB[i][j];
+				System.out.print(resultantMatrix[i][j]+" ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
