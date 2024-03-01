@@ -1,0 +1,35 @@
+/*
+ * Program to generate the fibonacci series upto a limit
+ * @author: Jaya John
+ */
+
+
+import java.util.Scanner;
+
+public class FibonacciSeries {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int a,b,c,limit;
+		a = 0;
+		b = 1;
+		System.out.println("Enter the limit");
+		limit=sc.nextInt();
+		System.out.println("Fibonacci Series Upto the limit "+limit+":");
+		for(int i=1;i<=limit;i++) {
+			if(i==1) {
+				System.out.println(a);
+			}
+			else if(i==2) {
+				System.out.println(b);
+			}
+			else {			
+				c=a+b;
+				a=b;
+				b=c;
+				System.out.println(c);
+			}
+		}
+	}
+}
