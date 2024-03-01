@@ -1,0 +1,34 @@
+/*
+ * program to find the area of a triangle using constructor and area method
+ * @author: Jaya John
+ */
+
+import java.util.Scanner;
+
+class Triangle{
+	int base,height;
+	Triangle(int base,int height){
+		this.base=base;
+		this.height=height;
+	}
+	int area() {
+		return((base*height)/2);
+	}
+}
+
+
+public class TriangleArea {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int base,height;
+		System.out.println("Enter the base and height of the Right Triangle");
+		base=sc.nextInt();
+		height=sc.nextInt();
+		Triangle tri=new Triangle(base,height);
+		int a=tri.area();
+		System.out.println("Area= "+a);
+	}
+
+}
