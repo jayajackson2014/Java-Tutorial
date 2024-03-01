@@ -1,0 +1,48 @@
+/*
+ * Program to explore Constructors in Java.
+ * Constructors are used for the automatic initialization of Java
+ * Type of constructors are default,parameterized and non parameterized
+ * This program is to find the area and volume of the Rectangle
+ * @author:Jaya John
+ */
+
+package com.seamedu;
+
+class Box{
+	int length,breadth,height;
+	//parameterized constructor
+	Box(int length,int breadth,int height) {
+		this.length=length;
+		this.breadth=breadth;
+		this.height=height;
+	}
+	//default constructor
+	Box(){
+		length=5;
+		breadth=10;
+		height=20;
+	}
+	void findArea() {
+		System.out.println("Area of a Reactangle: "+(length*breadth));
+	}
+	void findVolume() {
+		System.out.println("Volume of a Reactangle: "+(length*breadth*height));
+	}
+	
+}
+
+public class Reactangle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Box myBox=new Box(10,20,30);//Parameterized constructor
+		myBox.findArea();
+		myBox.findVolume();
+		System.out.println("Result Based on Non Parameterized constructor");
+		Box myBox1=new Box();
+		myBox1.findArea();
+		myBox1.findVolume();
+
+	}
+
+}
