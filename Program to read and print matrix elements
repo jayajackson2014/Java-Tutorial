@@ -1,0 +1,34 @@
+/*
+ * Program to read elements of matrix and display it
+ */
+
+package com.seamedu;
+
+import java.util.Scanner;
+
+public class Matrix {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int r,c,matrixA[][];
+		System.out.println("Enter the size of the matrix");
+		r=sc.nextInt();
+		c=sc.nextInt();
+		matrixA=new int[r][c];// Dynamic matrix creation
+		System.out.println("Enter the elements");
+		for(int i=0;i<r;i++) {
+			for(int j=0;j<c;j++) {
+				matrixA[i][j]=sc.nextInt();
+			}
+		}
+		System.out.println("Elements of the matrix are");
+		for(int i=0;i<r;i++) {
+			for(int j=0;j<c;j++) {
+				System.out.print(matrixA[i][j]+" ");
+			}
+			System.out.println();
+		}
+	}
+
+}
