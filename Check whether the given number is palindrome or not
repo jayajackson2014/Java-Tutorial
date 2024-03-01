@@ -1,0 +1,35 @@
+/*
+ * Program to check whether the given number is palindrome or not.
+ * Eg: for palindrome numbers 141,151,55,252 etc. 
+ * i.e, number and reverse of the number are same.
+ * To check palindrome or not, 
+ * you have to find the reverse of the number and check the original number
+ * if both are same, then it is palindrome else not palindrome.
+ * @author: Jaya John
+ */
+
+import java.util.Scanner;
+
+public class PalindromeOrNot {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int number,r,temp,rev=0;
+		System.out.println("Enter the number");
+		number=sc.nextInt();
+		temp=number;
+		while(number>0) {
+			r=number%10;
+			number=number/10;
+			rev=rev*10+r;
+		}
+		System.out.println("Reverse of the given number is: "+rev);
+		if(temp==rev) {
+			System.out.println(temp+" is palindrome");
+		}
+		else {
+			System.out.println(temp+" is not palindrome");
+		}
+	}
+}
