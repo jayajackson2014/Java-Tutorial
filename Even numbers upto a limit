@@ -1,0 +1,27 @@
+/*
+ * Program to generate the even numbers upto a limit.
+ * This program also explores continue
+ * @author:Jaya John
+ */
+
+
+
+import java.util.Scanner;
+
+public class EvenNumbers {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Program to generate even numbers upto a limit");
+		int limit,i=1;
+		System.out.println("Enter the limit");
+		limit=sc.nextInt();
+		while(i<=limit) {
+			if(i%2!=0) {
+				i++;
+				continue;
+			}
+			System.out.println(i);
+			i++;
+		}
+	}
+}
