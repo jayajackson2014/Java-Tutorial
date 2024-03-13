@@ -2,7 +2,7 @@
  * Java Program to find the frequency of a given character in a string.
  * @author: Jaya John
  */
-public class Sample {
+public class StringHandling {
 	public static void main(String[] args) {
 	String str1="Hello World";
 	int count=0;
