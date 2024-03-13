@@ -1,0 +1,15 @@
+/*
+ * Program to length of the string
+ * @author: Jaya John
+ */
+public class StringHandling {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="Hello World";
+		//find the string of the string using stringName.length()
+		System.out.println("Length of the given String: "+str.length());
+		//Output: Length of the given String: 11
+	}
+
+}
