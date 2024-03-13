@@ -1,0 +1,17 @@
+/*
+ * Program to remove all the occurance of the given character from the string
+ * @author: Jaya John
+ */
+public class RemoveOccurance {
+
+	public static void main(String[] args) {
+	
+		String str=new String("Hello World");
+		String strNew=str.replaceAll("o", "");
+		System.out.println(strNew);//Hell Wrld
+
+		
+
+	}
+
+}
