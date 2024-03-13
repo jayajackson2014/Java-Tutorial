@@ -1,0 +1,21 @@
+/*
+ * Program to read two strings and check whether the 2nd string is present in the first string or not
+ * @author: Jaya John
+ */
+public class StringContains {
+
+	public static void main(String[] args) {
+		
+		String str1="Hello world";
+		String str2="Hello";
+		if(str1.contains(str2)) {
+			System.out.println(str2+" is contained in the "+str1);
+		}
+		else {
+			System.out.println(str2+" is not contained in the "+str1);//hello is not contained in the Hello world
+
+		}
+
+	}
+
+}
