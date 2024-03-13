@@ -1,0 +1,46 @@
+/*
+ * Program to implement Java string comparision method
+ * @author: Jaya John
+ */
+public class StringHandling {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str1="Java string Program";
+		//startsWith method
+		System.out.println(str1.startsWith("Ja"));//true
+		System.out.println(str1.startsWith("Java"));//true
+		System.out.println(str1.startsWith("Hello"));//false
+		//endsWith method
+		System.out.println(str1.endsWith("m"));//true
+		System.out.println(str1.endsWith("Program"));//true
+		System.out.println(str1.endsWith("world"));//false
+		
+		// difference between == and equals()
+		String str2="hello";
+		String str3="hello";
+		System.out.println(str2==str3);//true
+		String str4=new String("java");
+		String str5=new String("java");
+		System.out.println(str4==str5);//false
+		System.out.println(str4.equals(str5));//true
+		
+		//compareTo method
+		//This method has two outputs
+		//zero --- means both strings are same
+		//<0 --- means left hand side string of the compareTo() is lesser
+		//>0 --- means right hand side string of the compareTo() is lesser
+		String str6="Johann";
+		String str7="Johann";
+		System.out.println(str6.compareTo(str7));//0
+		String str8="hi";
+		String str9="HI";
+		System.out.println(str8.compareToIgnoreCase(str9));//0
+		String str10="mike";
+		String str11="John";
+		System.out.println(str10.compareTo(str11));//>0
+		System.out.println(str11.compareTo(str10));//<0
+		
+		
+	}
+
+}
