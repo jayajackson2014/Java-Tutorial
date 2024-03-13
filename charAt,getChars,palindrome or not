@@ -1,0 +1,42 @@
+/*
+ * Program to length of the string
+ * @author: Jaya John
+ */
+public class StringHandling {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="Hello World";
+		//find the string of the string using stringName.length()
+		System.out.println("Length of the given String: "+str.length());//Output: Length of the given String: 11
+		//charAt() method to extract character
+		System.out.println("Character at 2nd position: "+str.charAt(2));//Output: l
+		//getChars(int startIndex,int endIndex,char[] target,int targetStartIndex) method
+		
+		int start=0;
+		int end=11;
+		char[] target=new char[end-start];
+		str.getChars(start, end, target, 0);
+		System.out.println(target);//Output: World
+		
+		//Palindrome or not
+		String str1="malayalam";
+		boolean flag=true;
+		for(int i=0;i<str1.length()/2;i++) {
+			if(str1.charAt(i)!=str1.charAt(str1.length()-i-1)) {
+				flag=false;
+				break;
+			}
+			
+		}
+		
+		if(flag) {
+			System.out.println("palindrome");
+		}
+		else
+		{
+			System.out.println("Not Palindrome");
+		}
+		
+	}
+
+}
