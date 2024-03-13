@@ -1,0 +1,17 @@
+/*
+ * Program to convert strings into Lowercase and Uppercase
+ * @author: Jaya John
+ */
+public class StringHandling {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="Hello World";
+		//convert the string to Lowercase
+		System.out.println(str.toLowerCase());//Output: hello world
+		//convert the string to Uppercase
+		System.out.println(str.toUpperCase());//Output: Hello World
+
+	}
+
+}
