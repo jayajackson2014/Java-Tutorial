@@ -1,0 +1,17 @@
+/*
+ * Program to check whether the two string are same or not
+ * @author: Jaya John
+ * equal() function is case sensitive
+ * equalsIgnoreCase() is case insensitive
+ */
+public class StringHandling {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str1="Hello";
+		String str2="hello";
+		System.out.println(str1.equals(str2));//returns false
+		System.out.println(str1.equalsIgnoreCase(str2));//returns true
+		
+	}
+
+}
