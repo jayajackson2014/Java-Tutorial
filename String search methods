@@ -1,0 +1,34 @@
+/*
+ * Program to implement Java string searching method
+ * 1.indexOf()
+ * 2.lastIndexOf()
+ * 3.substring()
+ * @author: Jaya John
+ */
+public class StringHandling {
+	public static void main(String[] args) {
+		String str1="This is the index Of example";
+		//indexOf() method ---Searches for the first occurrence of a character or substring.
+		System.out.println(str1.indexOf("is"));//2
+		System.out.println(str1.indexOf('e'));//10
+		
+		//lastIndexOf() method ---Searches for the last occurrence of a character or substring.
+		System.out.println(str1.lastIndexOf('e'));//27
+		System.out.println(str1.lastIndexOf("ex"));//21
+		
+		//substring() method
+		/*The substring begins at the specified beginIndex and extends to the character at index 
+		endIndex – 1.
+		*/
+		String str2="Quick brown fox jumps over the lazy dog";
+		System.out.println("Substring starting from index 15: ");
+		System.out.println(str2.substring(15));// jumps over the lazy dog
+		System.out.println("Substring starting from index 15 and ending at 20: ");
+		System.out.println(str2.substring(15, 20));//jump
+		
+		
+		
+		
+	}
+
+}
