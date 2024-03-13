@@ -1,5 +1,6 @@
 /*
- * Program to length of the string
+ * Program to use charAt(),getChars()
+ * Program to check whether the string is plaindrome or not
  * @author: Jaya John
  */
 public class StringHandling {
