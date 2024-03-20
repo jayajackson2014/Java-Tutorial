@@ -1,0 +1,35 @@
+/*
+ *program to perform Method Overloading
+ *Ploymorphism means ability to take more than one 
+ *ploymorphism is of two types compile Time ploymorphism and run time polymorphism
+ *Compile time polymorphism can be achieved using method overloading,constructor overloading and operator overloading
+ *This program illustrates the method overloading in Java
+ *@author: Jaya john
+ */
+class Addition1{
+	void add() {
+		int a=10;
+		int b=20;
+		System.out.println("Sum = "+(a+b));
+	}
+	int add(int num1) {
+		return(num1+num1);
+	}
+	int add(int x,int y) {
+		return(x+y);
+	}
+	double add(double num1,double num2) {
+		return(num1+num2);
+		
+	}
+}
+public class CompileTimePolymorrphism {//main class
+
+	public static void main(String[] args) {
+		Addition1 addObj=new Addition1();
+		double ans=addObj.add(10,30);//function call
+		System.out.println("sum = "+ans);
+		
+	}
+
+}
