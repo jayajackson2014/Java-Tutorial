@@ -1,0 +1,33 @@
+/*
+ * Program to illustrate Constructor overloading in Java
+ * @author: Jaya John
+ */
+
+class Substraction{
+	int num1,num2;
+	Substraction(){//Constructor without arguments
+		num1=30;
+		num2=10;
+	}
+	Substraction(int x,int y){//Parameterized Constructor
+		num1=x;
+		num2=y;
+	}
+	int sub() {//Function Definition
+		return(num1-num2);
+	}
+}
+public class ConstructorOverloading {
+
+	public static void main(String[] args) {
+		/*Substraction subObj=new Substraction();//Object created using non parametrized constructor
+		int ans=subObj.sub();
+		System.out.println("Difference = "+ans);
+		*/
+		//Constructor Overloading 
+		Substraction subObj=new Substraction(40,20);//Object created using non parametrized constructor
+		int ans=subObj.sub();
+		System.out.println("Difference = "+ans);
+	}
+
+}
