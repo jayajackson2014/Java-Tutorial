@@ -1,0 +1,25 @@
+/*
+ * Program to implement Simple Inheritance
+ * @author: Jaya John
+ */
+class Animal{//Super Class
+	void eat() {
+		System.out.println("Animals can eat");
+	}
+	void sleep() {
+		System.out.println("Animals can sleep");
+	}
+}
+class Dog extends Animal{//Subclass
+	void bark() {
+		System.out.println("Dogs can bark");
+	}
+}
+public class SimpleInheritance {
+	public static void main(String[] args) {
+		Dog dog1=new Dog();
+		dog1.eat();
+		dog1.sleep();
+		dog1.bark();
+	}
+}
