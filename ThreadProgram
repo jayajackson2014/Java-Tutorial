@@ -1,0 +1,58 @@
+import java.util.Random;
+
+class Number extends Thread{
+	public void run() {
+		Random r=new Random();
+		for(int i=0;i<10;i++) {
+			int num=r.nextInt(100);
+			System.out.println(num);
+			if(num%2==0) {
+				Square square=new Square(num);
+				square.start();
+			}
+			else {
+				Cube cube=new Cube(num);
+				cube.start();
+			}
+			try {
+				sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+		}
+	}
+	
+}
+
+class Square extends Thread{
+	int num;
+	Square(int num){
+		this.num=num;
+	}
+	public void run() {
+		int sq=num*num;
+		System.out.println("Sqaure: "+sq);
+	}
+}
+class Cube extends Thread{
+	int num;
+	Cube(int num){
+		this.num=num;
+	}
+	public void run() {
+		int cube=num*num*num;
+		System.out.println("Cube: "+cube);
+	}
+}
+
+public class MultiThread {
+
+	public static void main(String[] args) {
+		Number num=new Number();
+		num.start();
+	}
+
+}
