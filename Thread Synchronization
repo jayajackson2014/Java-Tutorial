@@ -1,0 +1,36 @@
+/* 
+ * Thread Synchronization in Java
+ * 
+ */
+class Table{
+	int num;
+	Table(int num){
+		this.num=num;
+	}
+	synchronized void printTable(int n) {
+		System.out.println("Table "+n);
+		for(int i=1;i<=5;i++) {
+			System.out.println(i+" * "+n+" = "+(i*n));
+		}
+	}
+	
+}
+class Multiplication extends Thread{
+	public void run(int n) {
+		Table tab=new Table(n);
+		tab.printTable(n);
+	}
+}
+public class ThreadSynchronization {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Multiplication mul=new Multiplication();
+		mul.run(5);
+		Multiplication mul1=new Multiplication();
+		mul1.run(7);
+		Multiplication mul2=new Multiplication();
+		mul2.run(10);
+	}
+
+}
