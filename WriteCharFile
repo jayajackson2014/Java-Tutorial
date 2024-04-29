@@ -1,0 +1,16 @@
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+public class WriteCharFile {
+
+	public static void main(String[] args) throws IOException,FileNotFoundException {
+		String myContent="Hello BCA students. Welcome to File Tutorial";
+		FileWriter fw=new FileWriter("myFile.txt");
+		fw.write(myContent);
+		fw.flush();
+		System.out.println("File written Successfully");
+		fw.close();
+
+	}
+
+}
