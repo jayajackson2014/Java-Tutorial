@@ -1,0 +1,53 @@
+import java.util.Random;
+
+class Square extends Thread{
+	int n;
+	Square(int n){
+		this.n=n;
+	}
+	public void run() {
+		int square=n*n;
+		System.out.println("Square"+square);
+				
+	}
+
+}
+class Cube extends Thread{
+	int n;
+	Cube(int n){
+		this.n=n;
+	}
+	public void run() {
+		int cube=n*n*n;
+		System.out.println("Cube"+cube);
+	}
+
+}
+public class MyThreadRun {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random r=new Random();
+		for(int i=0;i<2;i++) {
+			int z=r.nextInt(100);
+			System.out.println("Number"+z);
+			if(z%2==0) {
+				Square sq=new Square(z);
+				sq.start();
+			}
+			else {
+				Cube sq=new Cube(z);
+				sq.start();
+			}
+		}
+		try {
+			Thread.sleep(1000);
+			}catch 
+			(InterruptedException 
+			ex) {
+			System.out.println(ex);
+			}
+
+	}
+
+}
